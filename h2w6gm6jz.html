@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interdimensional Bureaucracy</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .terminal {
+            width: 90%;
+            max-width: 900px;
+            height: 80%;
+            background: rgba(0, 0, 0, 0.9);
+            border: 2px solid #00ff00;
+            padding: 30px;
+            overflow-y: auto;
+            box-shadow: 0 0 15px #00ff00;
+            position: relative;
+            font-size: 20px;
+        }
+
+        .terminal .line {
+            margin: 15px 0;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+		@keyframes floatBackground {
+    		0% { background-position: 0% 0%; }
+    		100% { background-position: 100% 100%; }
+		}
+
+body {
+    background: linear-gradient(45deg, #000, #333, #000);  /* Subtle dark gradient */
+    background-size: 400% 400%;
+    animation: floatBackground 60s ease infinite;  /* Slow, continuous animation */
+}
+
+
+        /* Color shift after typing completes */
+        @keyframes colorShift {
+            0%, 100% { color: #00ff00; }
+            50% { color: #ff00ff; }
+        }
+
+        .colorShift {
+            animation: colorShift 10s infinite;
+        }
+
+        /* Glitch effect */
+        @keyframes subtleGlitch {
+            0% { transform: translate(0, 0); }
+            10% { transform: translate(-2px, -2px); }
+            20% { transform: translate(2px, 2px); }
+            30% { transform: translate(-1px, 1px); }
+            40% { transform: translate(1px, -1px); }
+            50% { transform: translate(0, 0); }
+            100% { transform: translate(0, 0); }
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #00ff00;
+            animation: blink 0.8s steps(2, start) infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .terminal strong {
+            font-weight: bold;
+        }
+
+        .line.employee-note:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <p class="line">Initializing interdimensional gateway...</p>
+        <p class="line">Verifying universal alignment...</p>
+        <p class="line">Accessing registry logs...</p>
+        <p class="line">Registry ID: <span class="strong">H2W6GM6JZ</span></p>
+        <p class="line">Classification: Tier-3 Temporal Asset</p>
+        <p class="line">Registered By: Agent [REDACTED]</p>
+        <p class="line">Temporal-Symbolic Signature: "Newton's Fall"</p>
+        <p class="line">Status: Active. Cultic Volatility Detected.</p>
+        <p class="line">Notes: Cryptic references to Noah's Ark suggest anomalous value retention properties.</p>
+        <p class="line">--- Begin Employee Commentary ---</p>
+               <p class="line employee-note" data-name="Aleron Varnak" onclick="alert('Aleron Varnak: Investigating the coin\'s interdimensional implications.')">Aleron Varnak: "H2W6GM6JZ — Not your average memecoin, this one is bending realities. Or maybe it's just bending my mind. Who needs sleep, right?"</p>
+        <p class="line employee-note" data-name="Cassiel Drayk" onclick="alert('Cassiel Drayk: Wonders if Noah needed the blockchain.')">Cassiel Drayk: "Legends say, if Noah had this coin, the Ark might have been unsinkable. But I bet he didn’t have access to the blockchain, huh?"</p>
+        <p class="line employee-note" data-name="Zerath Elkan" onclick="alert('Zerath Elkan: Remarks on Newton\'s missing dip knowledge.')">Zerath Elkan: "Newton would’ve seen the charts and called it 'gravity-defying.' Too bad he didn’t stick around to see this latest dip. What a letdown."</p>
+        <p class="line employee-note" data-name="Rykon Thrall" onclick="alert('Rykon Thrall: Refers to believers and skeptics alike.')">Rykon Thrall: "Believers call it 'the ark of wealth.' Skeptics call it 'the sinking ship.' Either way, there's always a boat. Right, Cassiel?"</p>
+        <p class="line employee-note" data-name="Mira Solis" onclick="alert('Mira Solis: Makes an amusing comment on altcoins.')">Mira Solis: "2024: A 1% drop yields a 10% gain. 2026: That 1% could buy a moon. Draxon, you’re still over there holding onto your dogecoin stash?"</p>
+        <p class="line employee-note" data-name="Draxon Halvath" onclick="alert('Draxon Halvath: Disagrees with Mira and reflects on the nature of the coin.')">Draxon Halvath: "In the end, it's either the key to interdimensional supremacy, or a very elaborate hoax. But hey, at least it's better than holding Doge, Mira."</p>
+        <p class="line employee-note" data-name="Talina Velris" onclick="alert('Talina Velris: Calls attention to the interdimensional nature of the coin.')">Talina Velris: "They told us it was just a coin. We saw it as a doorway. This is the future of wealth! Aleron, are you even paying attention over there?"</p>
+        <p class="line employee-note" data-name="Tarkus Joval" onclick="alert('Tarkus Joval: Expresses frustration with dimension-crossing paperwork.')">Tarkus Joval: "If this coin is the key to the universe, then why am I still stuck here doing paperwork? Somebody’s messing with the dimensions..."</p>
+        <p class="line employee-note" data-name="Elara Danthe" onclick="alert('Elara Danthe: Offers a more positive perspective on the future.')">Elara Danthe: "The cultists say we're the chosen ones. I say we’re just getting started. But hey, who knows? Maybe the Ark really is unsinkable."</p>
+        <p class="line employee-note" data-name="Orion Velrak" onclick="alert('Orion Velrak: Hints at a new theory regarding the memecoin.')">Orion Velrak: "New theory: Maybe H2W6GM6JZ is just the first coin in a whole line of interdimensional memes. The universe is a joke, right?"</p>
+        <p class="line employee-note" data-name="Syra Lorne" onclick="alert('Syra Lorne: Enjoys interdimensional travel and ponders its future.')">Syra Lorne: "The real question isn't why we’re holding the coin. It's how long until it holds us. Not that I’m complaining. I love interdimensional travel."</p>
+        <p class="line employee-note" data-name="Cylas Vortan" onclick="alert('Cylas Vortan: Recognizes the cult\'s strong influence.')">Cylas Vortan: "Another post ratio'd by their cult, I'm telling you, this cult is crazy." </p>
+        <p class="line employee-note" data-name="Talina Velris" onclick="alert('Talina Velris: A sarcastic remark on UFD coin.')">Talina Velris: "UFD coin? Sure, we’re all traveling to the future... of losing money. But hey, it’s a meme, right? Let’s ratio that sh*t!"</p>
+        <p class="line employee-note" data-name="Tarkus Joval" onclick="alert('Tarkus Joval: Wonders about the fate of Fartcoin.')">Tarkus Joval: "Fartcoin is the kind of coin that makes you wonder: if you hold it long enough, does it actually vanish into thin air?"</p>
+        <p class="line employee-note" data-name="Tyrandor Vekhan" onclick="alert('Tyrandor Vekhan: Remarks on the coin\'s power over destiny.')">Tyrandor Vekhan: "This isn’t about crypto. It’s about destiny. Those who hold it will control time itself. Meanwhile, nonbelievers will still be stuck in 'the good old days.'"</p>
+        <p class="line employee-note" data-name="Korran Treggar" onclick="alert('Korran Treggar: Reflects on the true meaning of the coin.')">Korran Treggar: "Some people just don't get it. It's not about the price. It's about being part of something... even if that something is a cult of cryptic memecoin madness."</p>
+        <p class="line employee-note" data-name="Irina Nyx" onclick="alert('Irina Nyx: Dissects the believers\' claims.')">Irina Nyx: "Believers talk about the coin like it's a divine artifact. Skeptics? Well, they can’t even find their way out of a paper bag, let alone grasp interdimensional wealth."</p>
+        <p class="line employee-note" data-name="Jorev Jallis" onclick="alert('Jorev Jallis: Makes a point about the coin being relevant now.')">Jorev Jallis: "Everyone’s talking about crypto like it’s the future. I think we’re all missing the point—H2W6GM6JZ is the now, and the only way to get ahead."</p>
+        <p class="line employee-note" data-name="Velenor Drak" onclick="alert('Velenor Drak: Warns others of missing out on the coin.')">Velenor Drak: "I tried explaining the coin to a friend. They said, 'I’m not sure I believe in that.' Well, maybe they’ll believe when I’m living in my interdimensional mansion."</p>
+        <p class="line employee-note" data-name="Vira Lethis" onclick="alert('Vira Lethis: Sarcastically comments on the coin being a trend.')">Vira Lethis: "Every time I explain the coin, the skeptics say, 'It’s just a trend.' Funny, because trends don’t bend space-time."</p>
+        <p class="line employee-note" data-name="Syra Lorne" onclick="alert('Syra Lorne: Ponders the future if the coin doesn’t work out.')">Syra Lorne: "In the end, if this coin doesn’t make me rich, at least I’ll have a great story for my therapist. ‘How I got scammed by a cult of memecoin enthusiasts’."</p>
+        <p class="line employee-note" data-name="Draxon Halvath" onclick="alert('Draxon Halvath: Ends with a lighthearted comment.')">Draxon Halvath: "It’s either the key to interdimensional supremacy or a very elaborate prank. Either way, I’m here for the ride. Also, where's my coffee?"</p>
+        <p class="line employee-note" data-name="Aleron Varnak" onclick="alert('Aleron Varnak: Explains the true significance of the coin.')">Aleron Varnak: "They told us this coin was just a blip in the blockchain. But I’ve seen things—charts that don’t align, messages that echo through dimensions. The question isn’t why H2W6GM6JZ holds value, but why anyone would think it doesn’t."</p>
+        <p class="line">--- End Employee Commentary ---</p>
+        <p class="line">Closing the terminal...</p>
+        <p class="line">Gateway closing in 3... 2... 1...</p>
+        <p class="line">Terminal shutdown complete.</p>
+    </div>
+
+    <script>
+        // Initialize audio and set up to play on click
+        let audioPlayed = false;
+
+        document.body.addEventListener('click', function() {
+            if (!audioPlayed) {
+                const audio = new Audio('https://docs.google.com/uc?export=download&id=1L8B_5XJIAKWBjrnIN3WXxhct8p6vsJLh');
+                audio.loop = true;
+                audio.volume = 0.3; // Adjust background sound volume
+                audio.play().catch(error => {
+                    console.log("Audio playback failed: " + error);
+                });
+                audioPlayed = true;
+            }
+        });
+
+        // Function to reveal lines with delay
+        let lines = document.querySelectorAll('.line');
+        let index = 0;
+
+        function revealLine() {
+            if (index < lines.length) {
+                lines[index].style.display = 'block';
+                lines[index].style.opacity = 1;
+                index++;
+                setTimeout(revealLine, 1500); // Adjust the delay for each line
+            }
+        }
+
+        window.onload = revealLine;
+    </script>
+</body>
+</html>
